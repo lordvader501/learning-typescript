@@ -1,0 +1,20 @@
+# built in types
+-number
+- string
+-boolean
+-null
+-void
+- undefined
+
+# object types in ts
+-interface
+-class
+-enum
+-arrays
+-tuple
+
+#other types
+-any
+-object
+-unknown
+-never
