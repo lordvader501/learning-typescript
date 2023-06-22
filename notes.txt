@@ -18,3 +18,9 @@
 -object
 -unknown
 -never
+      
+#access modifiers
+-public 
+-private
+-protected
+

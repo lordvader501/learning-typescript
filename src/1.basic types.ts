@@ -21,7 +21,7 @@ let tup: [number, string, ...any] = [1, "abc", null, 13, "hello", true];
 //enum `follows Pascal naming convention`
 //enum Fruit { Apple = 'a', Mango = 'm', Banana = 'b' }; generates long js code so use const in front of it
 const enum Fruit { Apple = 'a', Mango = 'm', Banana = 'b' };
-let fruit: Fruit = Fruit.Apple
+let fruit: Fruit = Fruit.Apple;
 // default Apple = 0 but we can change by assigning it a number and then ts will autoincrement the next value, we can also assign string but we have to assign for all.
 
 //functions
@@ -35,8 +35,8 @@ type Person = {
     readonly id: number,        //readonly doent allow modify 
     name: string,
     number?: number,        // num is optional because of "?"
-    time: (time: Date) => void
-}
+    time: (time: Date) => void;
+};
 let p1: Person = { id: 1, name: "hello", time: (t: Date) => console.log(t) };
 // Person.id = 3; it will not work as it is readonly.
 
@@ -53,15 +53,15 @@ function xyz(num: number | string): number {
 //intersection example
 type Man = {
     talk: () => void,
-}
+};
 type Woman = {
     walk: () => void,
-}
+};
 type People = Man & Woman;
 let person: People = {
     talk: () => { },
     walk: () => { },
-}
+};
 
 // literal types
 type Quantity = 10 | 100;
@@ -78,7 +78,7 @@ function tolow(str: string | null | undefined): string {
 // optional chaining
 type Customer = {
     name: string,
-}
+};
 function getUser(id: number): Customer | null | undefined {
     return id == 0 ? null : { name: "hello" };
 }
@@ -92,7 +92,7 @@ let user = getUser(0);
 let natural_num: number | null = null;
 let getnum = {
     natural_num: natural_num ?? 10 // same as natural_num !== null ? natural_num : 10
-}
+};
 
 // type assertions
 // let id = <HTMLInputElement>document.getElementById('id');
@@ -113,40 +113,3 @@ function dosomething(): never {
 // dosomething();
 // console.log("hello") //not reachabe hence use never type to tell if its unreachable
 
-// OOP
-class Student {
-    // readonly id: number;
-    // name: string;
-    // course: string;
-    // private _balance: number;
-
-    constructor(public readonly id: number,
-        public name: string,
-        public course: string,
-        private _balance: number) {
-        // by setting these here we dont need to do above and below commented lines
-        // this.id = id;
-        // this.name = name;
-        // this.course = course;
-        // this._balance = balance;
-    }
-    get balance(): number {
-        return this._balance;
-    }
-    set balance(amount: number) {
-        if (amount <= 0) throw new Error("invalid amount")
-        this._balance = amount;
-    }
-    get coursename(): string {
-        return this.course;
-    }
-    set changecousrse(course: string) {
-        if (course.length === 0) throw new Error("course cant be empty!");
-        this.course = course;
-    }
-}
-
-// let stud = new Student(1, 'hello', 'cse');
-// if (stud instanceof Student) stud.changecousrse('it');
-// stud.balance = 100;
-// console.log(stud.course, stud.id, stud.name, stud.balance);
