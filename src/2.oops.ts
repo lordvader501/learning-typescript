@@ -36,7 +36,7 @@ class Student {
 // stud.balance = 100;
 // console.log(stud.course, stud.id, stud.name, stud.balance);
 
-// index atures
+// index signatures
 class Employee {
     [name: string]: string; //index signature property
 }
