@@ -31,3 +31,12 @@ learning typescript contains notes
 - abstract classes and methods
 - interface and interface implements on class
 - difference interface and type
+
+## Generics
+- generic class
+- generic function and methods
+- generic interfaces
+- generic constraints
+- extending generic classes oass to child , fixing and restricting parameters
+- keyof operator
+- type mapping & utility types
