@@ -55,4 +55,3 @@ learning typescript contains notes
 - property decorator
 - parameter decorator
 
-## modules
