@@ -80,21 +80,3 @@ class searchStore<T extends { name: string; }> extends Store<T>{
 //     }
 // }
 
-//typemapping and utility types
-interface Product1 {
-    name: string;
-    value: number;
-}
-type ReadOnly<T> = {
-    readonly [K in keyof T]: T[K]
-};
-type Optional<T> = {
-    [K in keyof T]?: T[K]
-};
-type Nullable<T> = {
-    [K in keyof T]: T[K] | null
-};
-let prod1: ReadOnly<Product1> = {
-    name: 'hello',
-    value: 1
-};

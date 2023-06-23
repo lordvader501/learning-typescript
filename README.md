@@ -37,6 +37,13 @@ learning typescript contains notes
 - generic function and methods
 - generic interfaces
 - generic constraints
-- extending generic classes oass to child , fixing and restricting parameters
+- extending generic classes to child , fixing and restricting parameters
 - keyof operator
-- type mapping & utility types
+
+## utility types and advanced types
+- type mapping 
+- utility types
+- template literals type
+- conditional types
+- recursive types
+
