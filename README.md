@@ -47,3 +47,12 @@ learning typescript contains notes
 - conditional types
 - recursive types
 
+## decorators
+- class decorator
+- decorator composition, factories and parameterised decorator
+- method decorator
+- accessor decorator
+- property decorator
+- parameter decorator
+
+## modules

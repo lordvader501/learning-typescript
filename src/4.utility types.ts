@@ -46,7 +46,7 @@ const todo: Readonly<Todo> = {
     title: "Delete inactive users",
     description: 'hello'
 };
-// todo.title = "Hello";  cant do that read only!
+//-todo.title = "Hello";  cant do that read only!
 
 // 5.Record<Keys, Type> Constructs an object type whose property keys are Keys and whose property values are Type. This utility can be used to map the properties of a type to another type
 interface CatInfo {
